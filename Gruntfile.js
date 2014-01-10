@@ -48,9 +48,7 @@ module.exports = function(grunt) {
       tasks: ['jshint', 'qunit']
     },
     express: {
-    options: {
-      // Override defaults here
-    },
+   
     dev: {
       options: {
         script: 'server.js',
