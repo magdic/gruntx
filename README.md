@@ -1,7 +1,7 @@
-Gruntx 
+##Gruntx 
 
 Start to learn Grunt JS repo.
 
-Learning Bower.
+##Learning Bower.
 
 Installing dependencies.
