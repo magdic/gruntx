@@ -81,7 +81,23 @@ module.exports = function(grunt) {
       file : {
         path : '/etc/hosts'
     }*/
+  },
+  'bower-install': {
+
+  target: {
+
+    // Point to the files that should be updated when
+    // you run `grunt bower-install`
+    src: ['index.html'],
+
+    // Optional:
+    // ---------
+    cwd: '',
+    ignorePath: '',
+    exclude: [],
+    fileTypes: {}
   }
+}
   });
 
   grunt.loadNpmTasks('grunt-contrib-uglify');
@@ -93,6 +109,7 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-connect');
   grunt.loadNpmTasks('grunt-open');
   grunt.loadNpmTasks('grunt-express-server');
+  grunt.loadNpmTasks('grunt-bower-install');
 
   grunt.registerTask('test', ['jshint', 'qunit']);
 

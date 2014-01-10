@@ -1,0 +1,68 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'node',
+1 verbose cli   '/usr/local/bin/npm',
+1 verbose cli   'install',
+1 verbose cli   'grunt-bower-installer',
+1 verbose cli   '--save-dev' ]
+2 info using npm@1.3.21
+3 info using node@v0.10.24
+4 warn package.json gruntx@0.0.0 No repository field.
+5 verbose readDependencies using package.json deps
+6 verbose cache add [ 'grunt-bower-installer', null ]
+7 verbose cache add name=undefined spec="grunt-bower-installer" args=["grunt-bower-installer",null]
+8 verbose parsed url { protocol: null,
+8 verbose parsed url   slashes: null,
+8 verbose parsed url   auth: null,
+8 verbose parsed url   host: null,
+8 verbose parsed url   port: null,
+8 verbose parsed url   hostname: null,
+8 verbose parsed url   hash: null,
+8 verbose parsed url   search: null,
+8 verbose parsed url   query: null,
+8 verbose parsed url   pathname: 'grunt-bower-installer',
+8 verbose parsed url   path: 'grunt-bower-installer',
+8 verbose parsed url   href: 'grunt-bower-installer' }
+9 silly lockFile 8289328e-grunt-bower-installer grunt-bower-installer
+10 verbose lock grunt-bower-installer /Users/luisc/.npm/8289328e-grunt-bower-installer.lock
+11 silly lockFile 8289328e-grunt-bower-installer grunt-bower-installer
+12 silly lockFile 8289328e-grunt-bower-installer grunt-bower-installer
+13 verbose addNamed [ 'grunt-bower-installer', '' ]
+14 verbose addNamed [ null, '*' ]
+15 silly lockFile 550a3685-grunt-bower-installer grunt-bower-installer@
+16 verbose lock grunt-bower-installer@ /Users/luisc/.npm/550a3685-grunt-bower-installer.lock
+17 silly addNameRange { name: 'grunt-bower-installer', range: '*', hasData: false }
+18 verbose url raw grunt-bower-installer
+19 verbose url resolving [ 'https://registry.npmjs.org/', './grunt-bower-installer' ]
+20 verbose url resolved https://registry.npmjs.org/grunt-bower-installer
+21 info trying registry request attempt 1 at 11:25:19
+22 http GET https://registry.npmjs.org/grunt-bower-installer
+23 http 404 https://registry.npmjs.org/grunt-bower-installer
+24 silly registry.get cb [ 404,
+24 silly registry.get   { date: 'Fri, 10 Jan 2014 17:25:42 GMT',
+24 silly registry.get     server: 'CouchDB/1.5.0 (Erlang OTP/R15B03)',
+24 silly registry.get     'content-type': 'application/json',
+24 silly registry.get     'cache-control': 'max-age=0',
+24 silly registry.get     'content-length': '52',
+24 silly registry.get     'accept-ranges': 'bytes',
+24 silly registry.get     via: '1.1 varnish',
+24 silly registry.get     age: '0',
+24 silly registry.get     'x-served-by': 'cache-lax1434-LAX',
+24 silly registry.get     'x-cache': 'MISS',
+24 silly registry.get     'x-cache-hits': '0',
+24 silly registry.get     'x-timer': 'S1389374742.086512089,VS0,VE47',
+24 silly registry.get     'keep-alive': 'timeout=10, max=50',
+24 silly registry.get     connection: 'Keep-Alive' } ]
+25 silly lockFile 550a3685-grunt-bower-installer grunt-bower-installer@
+26 silly lockFile 550a3685-grunt-bower-installer grunt-bower-installer@
+27 error 404 'grunt-bower-installer' is not in the npm registry.
+27 error 404 You should bug the author to publish it
+27 error 404
+27 error 404 Note that you can also install from a
+27 error 404 tarball, folder, or http url, or git url.
+28 error System Darwin 12.5.0
+29 error command "node" "/usr/local/bin/npm" "install" "grunt-bower-installer" "--save-dev"
+30 error cwd /Users/luisc/Desktop/gruntx
+31 error node -v v0.10.24
+32 error npm -v 1.3.21
+33 error code E404
+34 verbose exit [ 1, true ]
