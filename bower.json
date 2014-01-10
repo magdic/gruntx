@@ -1,0 +1,21 @@
+{
+  "name": "gruntx",
+  "version": "0.0.0",
+  "homepage": "https://github.com/magdic/gruntx",
+  "authors": [
+    "Magdiel Cordero"
+  ],
+  "description": "Bower init",
+  "main": "bower",
+  "license": "Free",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "2.0.3"
+  }
+}
