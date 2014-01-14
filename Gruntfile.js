@@ -45,7 +45,11 @@ module.exports = function(grunt) {
     },
     watch: {
       files: ['<%= jshint.files %>'],
-      tasks: ['jshint', 'qunit']
+      tasks: ['jshint', 'qunit'],
+      css: {
+        files: '**/*.scss',
+        tasks: ['sass']
+      }
     },
     express: {
    
@@ -55,31 +59,22 @@ module.exports = function(grunt) {
         app: 'Google Chrome'
       }
     },
-    prod: {
-      options: {
-        script: 'path/to/prod/server.js',
-        node_env: 'production'
-      }
-    },
-    test: {
-      options: {
-        script: 'path/to/test/server.js'
-      }
-    }
   },
     open : {
       dev : {
         path: 'http://localhost:1337/',
         app: 'Google Chrome'
-    }/*
-      build : {
-        path : 'http://google.com/',
-        app: 'Firefox'
-    },
-      file : {
-        path : '/etc/hosts'
-    }*/
+    }
   },
+
+sass: {
+      dist: {
+        files: {
+          'css/style.css' : 'sass/style.scss'
+        }
+      }
+    },
+
   'bower-install': {
 
   target: {
@@ -108,10 +103,11 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-open');
   grunt.loadNpmTasks('grunt-express-server');
   grunt.loadNpmTasks('grunt-bower-install');
+  grunt.loadNpmTasks('grunt-contrib-sass');
 
   grunt.registerTask('test', ['jshint', 'qunit']);
 
-  grunt.registerTask('default', ['jshint', 'qunit', 'concat', 'uglify', 'open']);
+  grunt.registerTask('default', ['jshint', 'qunit', 'concat', 'uglify', 'open', 'watch']);
 
   grunt.registerTask('server', [ 'express:dev', 'open', 'watch' ]);
 
