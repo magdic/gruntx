@@ -70,7 +70,8 @@ module.exports = function(grunt) {
 sass: {
       dist: {
         files: {
-          'css/style.css' : 'sass/style.scss'
+          'css/style.css' : 'sass/style.scss',
+          'css/fonts.css' : 'sass/fonts.scss',
         }
       }
     },
@@ -81,7 +82,7 @@ sass: {
 
     // Point to the files that should be updated when
     // you run `grunt bower-install`
-    src: ['index.html'],
+    src: ['index.html', 'another.html'],
 
     // Optional:
     // ---------
